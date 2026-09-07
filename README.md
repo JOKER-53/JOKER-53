@@ -1,4 +1,3 @@
-❯ cat Downloads/README.md 
 # Hi, I'm Kadhiravan EG 👋
 
 ### Cybersecurity Student • CTF Player • Secure Software Builder
