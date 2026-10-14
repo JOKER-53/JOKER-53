@@ -1,0 +1,221 @@
+<svg width="1180" height="620" viewBox="0 0 1180 620" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <style>
+    @keyframes blink { 0%,49%{opacity:1} 50%,100%{opacity:0} }
+    @keyframes floatY { 0%,100%{transform:translateY(0px)} 50%{transform:translateY(-6px)} }
+    @keyframes fadeIn { from{opacity:0;transform:translateY(6px)} to{opacity:1;transform:translateY(0)} }
+    @keyframes glitch { 0%,100%{transform:translate(0,0)} 20%{transform:translate(-1px,1px)} 40%{transform:translate(1px,-1px)} 60%{transform:translate(-1px,-1px)} 80%{transform:translate(1px,1px)} }
+    @keyframes rain { 0%{transform:translateY(-620px)} 100%{transform:translateY(620px)} }
+    @keyframes barGrow { from{stroke-dashoffset:var(--len)} to{stroke-dashoffset:0} }
+    @keyframes hexSpin { 0%{transform:rotate(0deg)} 100%{transform:rotate(360deg)} }
+    .cur{animation:blink 1s step-end infinite}
+    .floater{animation:floatY 5s ease-in-out infinite}
+    .p1{opacity:0;animation:fadeIn .4s ease forwards .1s}
+    .p2{opacity:0;animation:fadeIn .4s ease forwards .35s}
+    .p3{opacity:0;animation:fadeIn .4s ease forwards .6s}
+    .p4{opacity:0;animation:fadeIn .4s ease forwards .85s}
+    .p5{opacity:0;animation:fadeIn .4s ease forwards 1.1s}
+    .p6{opacity:0;animation:fadeIn .4s ease forwards 1.35s}
+    .p7{opacity:0;animation:fadeIn .4s ease forwards 1.6s}
+    .p8{opacity:0;animation:fadeIn .4s ease forwards 1.85s}
+    .glitchTxt{animation:glitch 3.5s infinite}
+    .rainCol{animation:rain linear infinite}
+    .hexRing{transform-origin:150px 240px;animation:hexSpin 14s linear infinite}
+    .bar{animation:barGrow 1.4s ease forwards .6s}
+  </style>
+
+  <linearGradient id="bg" x1="0" y1="0" x2="1180" y2="620" gradientUnits="userSpaceOnUse">
+    <stop offset="0%" stop-color="#050609"/>
+    <stop offset="100%" stop-color="#0a0f14"/>
+  </linearGradient>
+  <linearGradient id="accent" x1="0" y1="0" x2="1180" y2="0" gradientUnits="userSpaceOnUse">
+    <stop offset="0%" stop-color="#ff2e63"><animate attributeName="stop-color" values="#ff2e63;#eab308;#22d3ee;#ff2e63" dur="6s" repeatCount="indefinite"/></stop>
+    <stop offset="50%" stop-color="#eab308"><animate attributeName="stop-color" values="#eab308;#22d3ee;#ff2e63;#eab308" dur="6s" repeatCount="indefinite"/></stop>
+    <stop offset="100%" stop-color="#22d3ee"><animate attributeName="stop-color" values="#22d3ee;#ff2e63;#eab308;#22d3ee" dur="6s" repeatCount="indefinite"/></stop>
+  </linearGradient>
+  <linearGradient id="nameGrad" x1="0" y1="0" x2="600" y2="0" gradientUnits="userSpaceOnUse">
+    <stop offset="0%" stop-color="#fbbf24"/>
+    <stop offset="50%" stop-color="#f472b6"/>
+    <stop offset="100%" stop-color="#22d3ee"/>
+  </linearGradient>
+  <radialGradient id="vignette" cx="590" cy="310" r="620" gradientUnits="userSpaceOnUse">
+    <stop offset="60%" stop-color="#000" stop-opacity="0"/>
+    <stop offset="100%" stop-color="#000" stop-opacity="0.55"/>
+  </radialGradient>
+  <filter id="glow"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  <filter id="glow2"><feGaussianBlur stdDeviation="6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  <clipPath id="card"><rect width="1180" height="620" rx="20"/></clipPath>
+  <clipPath id="rainClip"><rect x="0" y="42" width="300" height="578"/></clipPath>
+  <polygon id="hexShape" points="150,150 220,190 220,270 150,310 80,270 80,190"/>
+  <clipPath id="hexClip"><use href="#hexShape"/></clipPath>
+</defs>
+
+<rect width="1180" height="620" rx="20" fill="url(#bg)"/>
+
+<g clip-path="url(#card)">
+
+  <!-- Faint matrix rain strip behind avatar column -->
+  <g clip-path="url(#rainClip)" opacity="0.35" font-family="'Courier New',monospace" font-size="12" fill="#22d3ee">
+    <text class="rainCol" x="30" style="animation-duration:7s">01001<tspan x="30" dy="16">10110</tspan><tspan x="30" dy="16">00101</tspan><tspan x="30" dy="16">11010</tspan><tspan x="30" dy="16">10011</tspan><tspan x="30" dy="16">01100</tspan><tspan x="30" dy="16">10101</tspan></text>
+    <text class="rainCol" x="90" style="animation-duration:9s;animation-delay:-3s">CVE-2024<tspan x="90" dy="16">nmap -sV</tspan><tspan x="90" dy="16">0xdeadbeef</tspan><tspan x="90" dy="16">/etc/shadow</tspan><tspan x="90" dy="16">payload()</tspan></text>
+    <text class="rainCol" x="200" style="animation-duration:8s;animation-delay:-1s">sudo su<tspan x="200" dy="16">chmod 777</tspan><tspan x="200" dy="16">rm -rf</tspan><tspan x="200" dy="16">grep -R</tspan><tspan x="200" dy="16">exploit.py</tspan></text>
+  </g>
+
+  <!-- Top accent bar -->
+  <rect x="0" y="0" width="1180" height="4" fill="url(#accent)" filter="url(#glow2)"/>
+
+  <!-- Terminal header -->
+  <rect x="0" y="0" width="1180" height="42" fill="#08090c"/>
+  <circle cx="26" cy="21" r="7" fill="#ff5f57"/>
+  <circle cx="48" cy="21" r="7" fill="#febc2e"/>
+  <circle cx="70" cy="21" r="7" fill="#28c840"/>
+  <text x="590" y="25" font-family="'Courier New',monospace" font-size="11" fill="#3a4048" text-anchor="middle" letter-spacing="1.5">root@kadhiravan:~# ./whoami --verbose</text>
+
+  <!-- vertical divider, offset diagonal feel via two lines -->
+  <line x1="300" y1="42" x2="300" y2="620" stroke="url(#accent)" stroke-width="1" opacity="0.3"/>
+
+  <!-- LEFT: hex avatar + identity -->
+  <g class="floater">
+    <g class="hexRing">
+      <use href="#hexShape" fill="none" stroke="url(#accent)" stroke-width="2" transform="translate(0,0) scale(1.12)" transform-origin="150 240" opacity="0.6"/>
+    </g>
+    <use href="#hexShape" fill="#0d1117" stroke="url(#accent)" stroke-width="2.5" transform="translate(0,80)"/>
+    <g clip-path="url(#hexClip)" transform="translate(0,80)">
+      <rect x="80" y="150" width="140" height="160" fill="#11151c"/>
+      <!-- placeholder monogram - swap this <g> for your <image> tag -->
+      <text x="150" y="245" font-family="Arial,sans-serif" font-size="46" font-weight="900" fill="url(#nameGrad)" text-anchor="middle">EG</text>
+    </g>
+  </g>
+
+  <text x="150" y="410" font-family="'Courier New',monospace" font-size="20" font-weight="900" fill="url(#nameGrad)" text-anchor="middle" letter-spacing="2" filter="url(#glow)" class="p1 glitchTxt">JOKER53</text>
+
+  <g font-family="'Courier New',monospace" font-size="10.5" text-anchor="middle" class="p2">
+    <text x="150" y="432" fill="#5b6472">Cybersecurity Engineer</text>
+    <text x="150" y="447" fill="#5b6472">Tamil Nadu, India 🇮🇳</text>
+  </g>
+
+  <!-- status -->
+  <g class="p3">
+    <rect x="60" y="462" width="180" height="26" rx="13" fill="#08170f" stroke="#22d3ee" stroke-opacity="0.5" stroke-width="1"/>
+    <circle cx="76" cy="475" r="4" fill="#34d399"><animate attributeName="opacity" values="1;0.25;1" dur="1.5s" repeatCount="indefinite"/></circle>
+    <text x="86" y="479" font-family="'Courier New',monospace" font-size="10" fill="#6ee7b7">Open to opportunities</text>
+  </g>
+
+  <!-- social pills stacked -->
+  <g font-family="'Courier New',monospace" font-size="10.5" class="p4">
+    <rect x="60" y="500" width="180" height="24" rx="12" fill="#12081a" stroke="#f472b6" stroke-opacity="0.5" stroke-width="1"/>
+    <text x="150" y="516" fill="#f9a8d4" text-anchor="middle">⌥ github.com/JOKER-53</text>
+    <rect x="60" y="530" width="180" height="24" rx="12" fill="#081018" stroke="#22d3ee" stroke-opacity="0.5" stroke-width="1"/>
+    <text x="150" y="546" fill="#67e8f9" text-anchor="middle">⌥ LinkedIn</text>
+    <rect x="60" y="560" width="180" height="24" rx="12" fill="#0e0c04" stroke="#eab308" stroke-opacity="0.5" stroke-width="1"/>
+    <text x="150" y="576" fill="#fde047" text-anchor="middle">⌥ kadhiravan226@gmail.com</text>
+  </g>
+
+  <!-- RIGHT SIDE -->
+  <g class="p1">
+    <text x="332" y="90" font-family="Arial,sans-serif" font-size="26" font-weight="800" fill="#f1f5f9">Hi 👋 I'm <tspan fill="url(#nameGrad)" filter="url(#glow)">Kadhiravan E.G.</tspan></text>
+  </g>
+
+  <g font-family="'Courier New',monospace" font-size="13" class="p2">
+    <text x="332" y="116" fill="#22d3ee" opacity="0">
+      <animate attributeName="opacity" values="0;1;1;1;0" dur="9s" begin="0.5s" repeatCount="indefinite"/>
+      Cybersecurity Engineer &amp; Ethical Hacker <tspan fill="#f472b6" class="cur">▌</tspan>
+    </text>
+    <text x="332" y="116" fill="#34d399" opacity="0">
+      <animate attributeName="opacity" values="0;0;0;1;1;1;0" dur="9s" begin="0.5s" repeatCount="indefinite" keyTimes="0;0.33;0.44;0.45;0.66;0.77;1" calcMode="discrete"/>
+      Penetration Tester &amp; Bug Bounty Hunter <tspan fill="#f472b6" class="cur">▌</tspan>
+    </text>
+    <text x="332" y="116" fill="#fbbf24" opacity="0">
+      <animate attributeName="opacity" values="0;0;0;0;0;1;1;0" dur="9s" begin="0.5s" repeatCount="indefinite" keyTimes="0;0.55;0.66;0.77;0.88;0.89;0.99;1" calcMode="discrete"/>
+      DevSecOps &amp; Cloud Security Enthusiast <tspan fill="#f472b6" class="cur">▌</tspan>
+    </text>
+  </g>
+  <line x1="332" y1="132" x2="1130" y2="132" stroke="#1c222b" stroke-width="1"/>
+
+  <text x="332" y="154" font-family="'Courier New',monospace" font-size="10" fill="#3a4048" letter-spacing="3" class="p3">ARSENAL — PROFICIENCY</text>
+
+  <!-- Skill bars instead of pills -->
+  <g font-family="'Courier New',monospace" font-size="11" class="p4">
+    <!-- row 1 -->
+    <text x="332" y="178" fill="#cbd5e1">Python</text>
+    <rect x="420" y="167" width="260" height="10" rx="5" fill="#151a21"/>
+    <rect x="420" y="167" width="230" height="10" rx="5" fill="#22d3ee" style="--len:260" class="bar"/>
+    <text x="332" y="202" fill="#cbd5e1">Kali / Pentesting</text>
+    <rect x="480" y="191" width="200" height="10" rx="5" fill="#151a21"/>
+    <rect x="480" y="191" width="185" height="10" rx="5" fill="#f472b6" class="bar"/>
+
+    <text x="700" y="178" fill="#cbd5e1">Kubernetes</text>
+    <rect x="800" y="167" width="200" height="10" rx="5" fill="#151a21"/>
+    <rect x="800" y="167" width="150" height="10" rx="5" fill="#fbbf24" class="bar"/>
+    <text x="700" y="202" fill="#cbd5e1">Docker</text>
+    <rect x="800" y="191" width="200" height="10" rx="5" fill="#151a21"/>
+    <rect x="800" y="191" width="170" height="10" rx="5" fill="#34d399" class="bar"/>
+  </g>
+
+  <g font-family="'Courier New',monospace" font-size="11" class="p5">
+    <text x="332" y="228" fill="#cbd5e1">Burp Suite</text>
+    <rect x="440" y="217" width="240" height="10" rx="5" fill="#151a21"/>
+    <rect x="440" y="217" width="205" height="10" rx="5" fill="#f97316" class="bar"/>
+    <text x="700" y="228" fill="#cbd5e1">Terraform / IaC</text>
+    <rect x="850" y="217" width="150" height="10" rx="5" fill="#151a21"/>
+    <rect x="850" y="217" width="120" height="10" rx="5" fill="#818cf8" class="bar"/>
+  </g>
+
+  <line x1="332" y1="250" x2="1130" y2="250" stroke="#1c222b" stroke-width="1"/>
+
+  <!-- Tool tag cloud -->
+  <text x="332" y="270" font-family="'Courier New',monospace" font-size="10" fill="#3a4048" letter-spacing="3" class="p5">TOOLING</text>
+  <g font-family="'Courier New',monospace" font-size="10.5" class="p6">
+    <rect x="332" y="280" width="50" height="24" rx="12" fill="#150c22" stroke="#a78bfa" stroke-opacity="0.5"/><text x="357" y="296" fill="#c4b5fd" text-anchor="middle">Java</text>
+    <rect x="390" y="280" width="90" height="24" rx="12" fill="#0f1a10" stroke="#34d399" stroke-opacity="0.5"/><text x="435" y="296" fill="#6ee7b7" text-anchor="middle">Metasploit</text>
+    <rect x="488" y="280" width="60" height="24" rx="12" fill="#101a22" stroke="#22d3ee" stroke-opacity="0.5"/><text x="518" y="296" fill="#67e8f9" text-anchor="middle">Nmap</text>
+    <rect x="556" y="280" width="88" height="24" rx="12" fill="#101522" stroke="#60a5fa" stroke-opacity="0.5"/><text x="600" y="296" fill="#93c5fd" text-anchor="middle">Wireshark</text>
+    <rect x="652" y="280" width="60" height="24" rx="12" fill="#170f04" stroke="#f59e0b" stroke-opacity="0.5"/><text x="682" y="296" fill="#fcd34d" text-anchor="middle">Trivy</text>
+    <rect x="720" y="280" width="60" height="24" rx="12" fill="#170a0a" stroke="#f87171" stroke-opacity="0.5"/><text x="750" y="296" fill="#fca5a5" text-anchor="middle">Wazuh</text>
+    <rect x="788" y="280" width="60" height="24" rx="12" fill="#0f1a10" stroke="#34d399" stroke-opacity="0.5"/><text x="818" y="296" fill="#6ee7b7" text-anchor="middle">Falco</text>
+    <rect x="856" y="280" width="90" height="24" rx="12" fill="#170f04" stroke="#f97316" stroke-opacity="0.5"/><text x="901" y="296" fill="#fdba74" text-anchor="middle">Prometheus</text>
+    <rect x="954" y="280" width="90" height="24" rx="12" fill="#101522" stroke="#818cf8" stroke-opacity="0.5"/><text x="999" y="296" fill="#a5b4fc" text-anchor="middle">PostgreSQL</text>
+  </g>
+
+  <line x1="332" y1="320" x2="1130" y2="320" stroke="#1c222b" stroke-width="1"/>
+
+  <!-- Currently exploring - vertical timeline -->
+  <text x="332" y="342" font-family="'Courier New',monospace" font-size="10" fill="#3a4048" letter-spacing="3" class="p6">CURRENTLY EXPLORING</text>
+
+  <g font-family="'Courier New',monospace">
+    <line x1="342" y1="362" x2="342" y2="520" stroke="#1c222b" stroke-width="2"/>
+
+    <g class="p6">
+      <circle cx="342" cy="368" r="5" fill="#f472b6"/>
+      <text x="360" y="372" fill="#f9a8d4" font-size="12">Advanced Penetration Testing</text>
+      <text x="360" y="388" fill="#5b6472" font-size="10">Web App · API · Binary Exploitation</text>
+    </g>
+    <g class="p7">
+      <circle cx="342" cy="408" r="5" fill="#22d3ee"/>
+      <text x="360" y="412" fill="#67e8f9" font-size="12">Bug Bounty Hunting</text>
+      <text x="360" y="428" fill="#5b6472" font-size="10">HackerOne · Bugcrowd · Intigriti</text>
+    </g>
+    <g class="p7">
+      <circle cx="342" cy="448" r="5" fill="#34d399"/>
+      <text x="360" y="452" fill="#6ee7b7" font-size="12">Cloud Security &amp; DevSecOps</text>
+      <text x="360" y="468" fill="#5b6472" font-size="10">AWS IAM · K8s Hardening · CSPM</text>
+    </g>
+    <g class="p8">
+      <circle cx="342" cy="488" r="5" fill="#fbbf24"/>
+      <text x="360" y="492" fill="#fde047" font-size="12">SIEM &amp; Container Security</text>
+      <text x="360" y="508" fill="#5b6472" font-size="10">Wazuh · Falco · Trivy · Kubernetes</text>
+    </g>
+  </g>
+
+  <!-- Footer -->
+  <g class="p8">
+    <line x1="0" y1="560" x2="1180" y2="560" stroke="#1c222b" stroke-width="1"/>
+    <text x="590" y="583" font-family="'Courier New',monospace" font-size="11" fill="#3a4048" text-anchor="middle" font-style="italic">"Securing tomorrow, one line of code at a time."</text>
+    <text x="590" y="602" font-family="'Courier New',monospace" font-size="10.5" fill="url(#nameGrad)" text-anchor="middle" filter="url(#glow)">⚡ github.com/JOKER-53 · Open to collaborations</text>
+  </g>
+
+</g>
+
+<rect width="1180" height="620" rx="20" fill="url(#vignette)"/>
+<rect x="1" y="1" width="1178" height="618" rx="19" fill="none" stroke="url(#accent)" stroke-width="1" opacity="0.5"/>
+</svg>

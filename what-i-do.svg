@@ -1,0 +1,36 @@
+<svg width="1100" height="220" viewBox="0 0 1100 220" xmlns="http://www.w3.org/2000/svg" font-family="'Arial Black','Helvetica Neue',Arial,sans-serif">
+  <rect x="0" y="0" width="1100" height="220" fill="#F2EEE3"/>
+
+  <!-- OFFENSE -->
+  <rect x="30" y="30" width="330" height="160" fill="#0A0A0A"/>
+  <rect x="20" y="20" width="330" height="160" fill="#FFFFFF" stroke="#0A0A0A" stroke-width="4"/>
+  <rect x="20" y="20" width="150" height="34" fill="#FF5A36" stroke="#0A0A0A" stroke-width="4"/>
+  <text x="95" y="43" font-size="13" fill="#0A0A0A" text-anchor="middle" font-weight="900" letter-spacing="0.5">// OFFENSE</text>
+  <text x="40" y="90" font-size="13.5" fill="#0A0A0A" font-family="'JetBrains Mono',monospace" font-weight="700">
+    <tspan x="40" dy="0">Web &amp; API pentesting, recon,</tspan>
+    <tspan x="40" dy="20">exploit chaining, CTFs, bug</tspan>
+    <tspan x="40" dy="20">bounty hunting.</tspan>
+  </text>
+
+  <!-- DEFENSE -->
+  <rect x="405" y="30" width="330" height="160" fill="#0A0A0A"/>
+  <rect x="395" y="20" width="330" height="160" fill="#FFFFFF" stroke="#0A0A0A" stroke-width="4"/>
+  <rect x="395" y="20" width="150" height="34" fill="#4FD1C5" stroke="#0A0A0A" stroke-width="4"/>
+  <text x="470" y="43" font-size="13" fill="#0A0A0A" text-anchor="middle" font-weight="900" letter-spacing="0.5">// DEFENSE</text>
+  <text x="415" y="90" font-size="13.5" fill="#0A0A0A" font-family="'JetBrains Mono',monospace" font-weight="700">
+    <tspan x="415" dy="0">SIEM tuning, log correlation,</tspan>
+    <tspan x="415" dy="20">threat hunting, container &amp;</tspan>
+    <tspan x="415" dy="20">K8s hardening.</tspan>
+  </text>
+
+  <!-- PLATFORM -->
+  <rect x="780" y="30" width="300" height="160" fill="#0A0A0A"/>
+  <rect x="770" y="20" width="300" height="160" fill="#FFFFFF" stroke="#0A0A0A" stroke-width="4"/>
+  <rect x="770" y="20" width="160" height="34" fill="#FFDE59" stroke="#0A0A0A" stroke-width="4"/>
+  <text x="850" y="43" font-size="13" fill="#0A0A0A" text-anchor="middle" font-weight="900" letter-spacing="0.5">// PLATFORM</text>
+  <text x="790" y="90" font-size="13.5" fill="#0A0A0A" font-family="'JetBrains Mono',monospace" font-weight="700">
+    <tspan x="790" dy="0">DevSecOps pipelines, IaC</tspan>
+    <tspan x="790" dy="20">with Terraform, cloud</tspan>
+    <tspan x="790" dy="20">security on AWS/GCP.</tspan>
+  </text>
+</svg>

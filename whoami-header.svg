@@ -1,0 +1,5 @@
+<svg width="200" height="56" viewBox="0 0 200 56" xmlns="http://www.w3.org/2000/svg" font-family="'Arial Black','Helvetica Neue',Arial,sans-serif">
+  <rect x="8" y="8" width="200" height="40" fill="#0A0A0A"/>
+  <rect x="0" y="0" width="200" height="40" fill="#4FD1C5" stroke="#0A0A0A" stroke-width="4"/>
+  <text x="100.0" y="26" font-size="16" fill="#0A0A0A" text-anchor="middle" font-weight="900" letter-spacing="1">[ WHOAMI ]</text>
+</svg>

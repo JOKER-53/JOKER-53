@@ -1,0 +1,5 @@
+<svg width="280" height="56" viewBox="0 0 280 56" xmlns="http://www.w3.org/2000/svg" font-family="'Arial Black','Helvetica Neue',Arial,sans-serif">
+  <rect x="8" y="8" width="280" height="40" fill="#0A0A0A"/>
+  <rect x="0" y="0" width="280" height="40" fill="#FFDE59" stroke="#0A0A0A" stroke-width="4"/>
+  <text x="140.0" y="26" font-size="16" fill="#0A0A0A" text-anchor="middle" font-weight="900" letter-spacing="1">[ CONTRIBUTIONS ]</text>
+</svg>

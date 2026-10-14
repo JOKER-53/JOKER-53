@@ -1,0 +1,22 @@
+<svg width="620" height="52" viewBox="0 0 620 52" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono',monospace" font-weight="700">
+  <!-- STATUS -->
+  <rect x="0" y="8" width="200" height="36" fill="#0A0A0A" stroke="#0A0A0A" stroke-width="2"/>
+  <rect x="0" y="8" width="70" height="36" fill="#F2EEE3" stroke="#0A0A0A" stroke-width="2"/>
+  <text x="35" y="31" font-size="11" fill="#0A0A0A" text-anchor="middle" letter-spacing="0.5">STATUS</text>
+  <text x="135" y="31" font-size="11" fill="#F2EEE3" text-anchor="middle" letter-spacing="0.5">OPEN TO WORK</text>
+  <rect x="66" y="8" width="4" height="36" fill="#4FD1C5"/>
+
+  <!-- BASED IN -->
+  <rect x="216" y="8" width="200" height="36" fill="#0A0A0A" stroke="#0A0A0A" stroke-width="2"/>
+  <rect x="216" y="8" width="82" height="36" fill="#F2EEE3" stroke="#0A0A0A" stroke-width="2"/>
+  <text x="257" y="31" font-size="11" fill="#0A0A0A" text-anchor="middle" letter-spacing="0.5">BASED IN</text>
+  <text x="360" y="31" font-size="10.5" fill="#F2EEE3" text-anchor="middle" letter-spacing="0.3">TAMIL NADU, INDIA</text>
+  <rect x="294" y="8" width="4" height="36" fill="#FF5A36"/>
+
+  <!-- ALIAS -->
+  <rect x="448" y="8" width="172" height="36" fill="#0A0A0A" stroke="#0A0A0A" stroke-width="2"/>
+  <rect x="448" y="8" width="64" height="36" fill="#F2EEE3" stroke="#0A0A0A" stroke-width="2"/>
+  <text x="480" y="31" font-size="11" fill="#0A0A0A" text-anchor="middle" letter-spacing="0.5">ALIAS</text>
+  <text x="568" y="31" font-size="11" fill="#F2EEE3" text-anchor="middle" letter-spacing="0.5">JOKER53</text>
+  <rect x="508" y="8" width="4" height="36" fill="#FFDE59"/>
+</svg>
