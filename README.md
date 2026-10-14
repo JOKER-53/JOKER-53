@@ -1,8 +1,5 @@
 ![banner](https://raw.githubusercontent.com/JOKER-53/JOKER-53/main/banner.svg)
 
-
-Hiii
-
 <div align="center">
 
 <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=16&duration=2600&pause=900&color=4FD1C5&center=true&vCenter=true&width=700&lines=root%40joker53%3A~%23+nmap+-sV+-p-+target;%5B%2B%5D+Scanning+for+open+opportunities...;%5B%2B%5D+Vulnerability+found%3A+underestimated+potential;%5B%2B%5D+Exploiting...+skills+deployed+successfully;%5B%2B%5D+Access+granted%3A+welcome+to+my+profile" alt="Typing SVG" /></a>
