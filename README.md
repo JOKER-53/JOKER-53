@@ -128,7 +128,7 @@
 
 > *"THE QUIETER YOU BECOME, THE MORE YOU ARE ABLE TO HEAR."*
 
-**JOKER53 · KADHIRAVAN E.G.**
+**JOKER-53 (alias Kadhiravan E.G.)**
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=18&pause=1000&color=4FD1C5&center=true&vCenter=true&width=650&lines=%F0%9F%94%90+Cybersecurity+Engineer+%26+Ethical+Hacker;%F0%9F%9B%A1%EF%B8%8F+Penetration+Tester+%26+Bug+Bounty+Hunter;%E2%98%81%EF%B8%8F+DevSecOps+%26+Cloud+Security+Architect;%F0%9F%90%9B+Securing+systems%2C+one+CVE+at+a+time;%F0%9F%92%BB+Breaking+things+ethically+since+day+one)](https://git.io/typing-svg)
 
