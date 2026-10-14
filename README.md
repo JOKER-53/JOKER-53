@@ -121,7 +121,7 @@
   <a href="https://linkedin.com/in/kadhiravan-e-g-028818327"><img src="https://raw.githubusercontent.com/JOKER-53/JOKER-53/main/linkedin.svg"/></a>
   <a href="https://www.instagram.com/__kadhiravan__"><img src="https://raw.githubusercontent.com/JOKER-53/JOKER-53/main/instagram.svg"/></a>
   <a href="https://tryhackme.com/r/p/JOKER53"><img src="https://raw.githubusercontent.com/JOKER-53/JOKER-53/main/tryhackme.svg"/></a>
-  <a href="http://joker53.me/"><img src="https://raw.githubusercontent.com/JOKER-53/JOKER-53/main/site.svg"/></a>
+  <a href="https://joker53.me/"><img src="https://raw.githubusercontent.com/JOKER-53/JOKER-53/main/site.svg"/></a>
 </p>
 
 <div align="center">
