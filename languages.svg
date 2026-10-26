@@ -1,0 +1,25 @@
+<svg width="480" height="280" viewBox="0 0 480 280" xmlns="http://www.w3.org/2000/svg" font-family="'Arial Black','Helvetica Neue',Arial,sans-serif">
+  <rect x="0" y="0" width="480" height="280" fill="#F2EEE3"/>
+  <rect x="18" y="18" width="440" height="244" fill="#0A0A0A"/>
+  <rect x="10" y="10" width="440" height="244" fill="#FFFFFF" stroke="#0A0A0A" stroke-width="4"/>
+  <rect x="10" y="10" width="180" height="38" fill="#FFDE59" stroke="#0A0A0A" stroke-width="4"/>
+  <text x="100" y="35" font-size="14" fill="#0A0A0A" text-anchor="middle" letter-spacing="0.5" font-weight="900">TOP LANGUAGES</text>
+  <g font-family="'JetBrains Mono',monospace" font-weight="700">
+    <text x="32" y="84" font-size="13" fill="#0A0A0A" font-weight="900">TYPESCRIPT</text>
+    <text x="428" y="84" font-size="13" fill="#0A0A0A" text-anchor="end" font-weight="900">41.5%</text>
+    <rect x="32" y="90" width="396" height="16" fill="#F2EEE3" stroke="#0A0A0A" stroke-width="2.5"/>
+    <rect x="32" y="90" width="164" height="16" fill="#FFDE59" stroke="#0A0A0A" stroke-width="2.5"/>
+    <text x="32" y="130" font-size="13" fill="#0A0A0A" font-weight="900">JAVASCRIPT</text>
+    <text x="428" y="130" font-size="13" fill="#0A0A0A" text-anchor="end" font-weight="900">13.0%</text>
+    <rect x="32" y="136" width="396" height="16" fill="#F2EEE3" stroke="#0A0A0A" stroke-width="2.5"/>
+    <rect x="32" y="136" width="51" height="16" fill="#FF5A36" stroke="#0A0A0A" stroke-width="2.5"/>
+    <text x="32" y="176" font-size="13" fill="#0A0A0A" font-weight="900">HTML</text>
+    <text x="428" y="176" font-size="13" fill="#0A0A0A" text-anchor="end" font-weight="900">10.5%</text>
+    <rect x="32" y="182" width="396" height="16" fill="#F2EEE3" stroke="#0A0A0A" stroke-width="2.5"/>
+    <rect x="32" y="182" width="42" height="16" fill="#4FD1C5" stroke="#0A0A0A" stroke-width="2.5"/>
+    <text x="32" y="222" font-size="13" fill="#0A0A0A" font-weight="900">QML</text>
+    <text x="428" y="222" font-size="13" fill="#0A0A0A" text-anchor="end" font-weight="900">9.8%</text>
+    <rect x="32" y="228" width="396" height="16" fill="#F2EEE3" stroke="#0A0A0A" stroke-width="2.5"/>
+    <rect x="32" y="228" width="39" height="16" fill="#0A0A0A" stroke="#0A0A0A" stroke-width="2.5"/>
+  </g>
+</svg>
