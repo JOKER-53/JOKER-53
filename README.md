@@ -3,15 +3,11 @@
 
 <br/>
 
-<table>
-<tr>
-<td width="55%" valign="top">
+<div align="center">
 
 ![Profile Card](https://github.com/JOKER-53/JOKER-53/raw/main/lanyard.svg)
 
-</td>
-</tr>
-</table>
+</div>
 
 <img src="https://raw.githubusercontent.com/JOKER-53/JOKER-53/main/reachme-header.svg" alt="[ REACH ME ]" />
 
