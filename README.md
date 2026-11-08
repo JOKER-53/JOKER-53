@@ -3,6 +3,9 @@
 
 <br/>
 
+
+<img src="https://raw.githubusercontent.com/JOKER-53/JOKER-53/main/whoami-header.svg" alt="[ WHOAMI ]" />
+
 <div align="center">
 
 ![Profile Card](https://github.com/JOKER-53/JOKER-53/raw/main/lanyard.svg)
